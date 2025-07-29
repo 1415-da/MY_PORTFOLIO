@@ -3,6 +3,18 @@ import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
+    title: "DataSwift – Data Analytics Platform",
+    date: "August 2025",
+    image: require("../assets/DataSwift.png"),
+    description:
+      "At Dataswift, our core goal is to make advanced analytics accessible to everyone without sacrificing power or flexibility. We’re building a dashboard where non-technical users can easily upload data, run automated cleaning, and generate rich, AI-powered insights through simple, guided steps and interactive visualizations—no coding required. At the same time, we offer deeper controls and custom scripting for advanced users, so anyone from a business analyst to a data scientist can work at their preferred depth. By combining intuitive workflows, one-click reporting, and progressive feature access.",
+    technologies: ["Next.js", "Python","MongoDB", "Tailwind CSS", "Pandas", "NumPy", "Scikit-learn"],
+    github: "https://github.com/1415-da/DataSwift",
+    demo: "#",
+    blog: "#",
+    category: "Machine Learning"
+  },
+  {
     title: "Weather Data Analysis",
     date: "July 2025",
     image: require("../assets/weather.png"),
@@ -48,7 +60,7 @@ const projects = [
     github: "https://github.com/1415-da/Celebrity_Search",
     demo: "https://celebritysearch-co4ehtucxzb7aucw2gz8x5.streamlit.app/",
     blog: "#",
-    category: "AI/ML"
+    category: "AI"
   },
   {
     title: "LinkedIn Post Generator",
@@ -60,7 +72,7 @@ const projects = [
     github: "https://github.com/1415-da/Linkedin_Post_Generator",
     demo: "#",
     blog: "#",
-    category: "AI/ML"
+    category: "AI"
   },
   {
     title: "Personalized Fitness & Nutrition Recommender – ML Web App",
@@ -178,7 +190,7 @@ const Projects = ({ hideDescriptionOnMobile = false }) => {
         
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           <div className="text-center">
-            <div className="text-3xl font-bold text-[#FFD600] mb-2">8</div>
+            <div className="text-3xl font-bold text-[#FFD600] mb-2">9</div>
             <div className="text-[#B0B0B0] text-sm">Total Projects</div>
           </div>
           <div className="text-center">
