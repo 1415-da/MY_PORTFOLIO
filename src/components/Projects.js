@@ -3,6 +3,18 @@ import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
+    title: "Self-Healing Sentiment Analysis Pipeline",
+    date: "February 2025",
+    image: require("../assets/HealingPipeline.png"),
+    description:
+      "An Airflow DAG that runs sentiment analysis on Yelp-style reviews using a local Ollama LLM (LLaMA 3.2). It automatically detects and fixes bad or malformed text (missing, empty, wrong type, too long, etc.) before inference, then outputs sentiment labels, confidence scores, and a health report.",
+    technologies: ["Python (3.12+)", "Apache Airflow (3.0+)", "Ollama", "LLaMA 3.2"],
+    github: "https://github.com/1415-da/SelfHealing-DataPipeline",
+    demo: "#",
+    blog: "#",
+    category: "Data Engineering"
+  },
+  {
     title: "DataSwift – Data Analytics Platform",
     date: "August 2025",
     image: require("../assets/DataSwift.png"),
@@ -190,7 +202,7 @@ const Projects = ({ hideDescriptionOnMobile = false }) => {
         
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           <div className="text-center">
-            <div className="text-3xl font-bold text-[#FFD600] mb-2">9</div>
+            <div className="text-3xl font-bold text-[#FFD600] mb-2">10</div>
             <div className="text-[#B0B0B0] text-sm">Total Projects</div>
           </div>
           <div className="text-center">
