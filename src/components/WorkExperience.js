@@ -26,7 +26,7 @@ const WorkExperience = () => {
             <div className="bg-[#181818] rounded-lg p-4 md:p-6 border border-[#333333] hover:border-[#FFD600]/30 transition-all duration-300 hover:shadow-lg group">
               <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-3 gap-2 md:gap-0">
                 <h3 className="text-base md:text-lg font-bold text-[#f5f5f5] group-hover:text-[#FFD600] transition-colors duration-300">Operations Intern</h3>
-                <span className="text-[#FFD600] text-xs md:text-sm font-semibold bg-[#FFD600]/10 px-2 md:px-3 py-1 rounded-full self-start">Nov 2025 - Present</span>
+                <span className="text-[#FFD600] text-xs md:text-sm font-semibold bg-[#FFD600]/10 px-2 md:px-3 py-1 rounded-full self-start">Nov 2025 - Feb 2026</span>
               </div>
               <p className="text-[#f5f5f5] font-semibold text-sm mb-2">Tradyon | AI-Driven Trade Intelligence Startup</p>
               <p className="text-[#B0B0B0] text-sm mb-3">Bangalore, Karnataka (On-site)</p>
