@@ -5,11 +5,11 @@ const projects = [
   {
     title: "Invoice Prediction System",
     date: "March 2026",
-    image: require("../assets/avatar.png"),
+    image: require("../../src/assets/InvoicePredictionSystem.png"),
     description:
       "Built an invoice prediction system using historical billing/payment data, including data cleaning, feature engineering, model training, and evaluation to estimate invoice outcomes.",
     technologies: ["Python", "Pandas", "NumPy", "Scikit-learn"],
-    github: "",
+    github: "https://github.com/1415-da/Invoice_System",
     demo: "#",
     blog: "#",
     category: "Data Analysis"
