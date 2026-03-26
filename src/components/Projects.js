@@ -3,8 +3,20 @@ import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
+    title: "Invoice Prediction System",
+    date: "March 2026",
+    image: require("../assets/avatar.png"),
+    description:
+      "Built an invoice prediction system using historical billing/payment data, including data cleaning, feature engineering, model training, and evaluation to estimate invoice outcomes.",
+    technologies: ["Python", "Pandas", "NumPy", "Scikit-learn"],
+    github: "",
+    demo: "#",
+    blog: "#",
+    category: "Data Analysis"
+  },
+  {
     title: "Self-Healing Sentiment Analysis Pipeline",
-    date: "February 2025",
+    date: "February 2026",
     image: require("../assets/HealingPipeline.png"),
     description:
       "An Airflow DAG that runs sentiment analysis on Yelp-style reviews using a local Ollama LLM (LLaMA 3.2). It automatically detects and fixes bad or malformed text (missing, empty, wrong type, too long, etc.) before inference, then outputs sentiment labels, confidence scores, and a health report.",
@@ -135,6 +147,16 @@ const Projects = ({ hideDescriptionOnMobile = false }) => {
     ? projects 
     : projects.filter(project => project.category === selectedCategory);
 
+  // Project Statistics (keep in sync with the `projects` array)
+  const totalProjects = projects.length;
+  const liveDemosCount = projects.filter((project) => project.demo && project.demo !== "#").length;
+  const technologiesUsedCount = new Set(
+    projects.flatMap((project) => project.technologies || [])
+  ).size;
+  const openSourcePct = Math.round(
+    (projects.filter((project) => project.github && project.github !== "#").length / totalProjects) * 100
+  );
+
   return (
     <div className="space-y-8">
       {/* Category Filter Bar */}
@@ -202,19 +224,19 @@ const Projects = ({ hideDescriptionOnMobile = false }) => {
         
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           <div className="text-center">
-            <div className="text-3xl font-bold text-[#FFD600] mb-2">10</div>
+            <div className="text-3xl font-bold text-[#FFD600] mb-2">{totalProjects}</div>
             <div className="text-[#B0B0B0] text-sm">Total Projects</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-[#FFD600] mb-2">4</div>
+            <div className="text-3xl font-bold text-[#FFD600] mb-2">{liveDemosCount}</div>
             <div className="text-[#B0B0B0] text-sm">Live Demos</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-[#FFD600] mb-2">15+</div>
+            <div className="text-3xl font-bold text-[#FFD600] mb-2">{technologiesUsedCount}</div>
             <div className="text-[#B0B0B0] text-sm">Technologies Used</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-[#FFD600] mb-2">100%</div>
+            <div className="text-3xl font-bold text-[#FFD600] mb-2">{openSourcePct}%</div>
             <div className="text-[#B0B0B0] text-sm">Open Source</div>
           </div>
         </div>
