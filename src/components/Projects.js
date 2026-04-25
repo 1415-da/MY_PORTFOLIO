@@ -5,7 +5,7 @@ const projects = [
   {
     title: "Crop Price Prediction System",
     date: "April 2026",
-    image: require("../assets/CropPricePrediction.png"),
+    image: require("../assets/Price_Prediction.png"),
     description:
       "CropIntelli is a Flask-based machine learning web app that predicts crop prices using historical mandi trends, weather, and yield data. It supports manual and CSV batch predictions, compares multiple models (XGBoost, LightGBM, CatBoost, Random Forest, SVR, Ensemble), and includes interactive EDA with downloadable metrics/reports for analysis.",
     technologies: ["Flask", "Python", "XGBoost", "LightGBM", "CatBoost", "Scikit-learn", "Pandas"],
