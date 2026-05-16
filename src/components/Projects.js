@@ -3,6 +3,31 @@ import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
+    title: "BiteSense",
+    date: "May 2026",
+    image: require("../assets/BiteSense.png"),
+    description:
+      "BiteSense is an intelligent food analysis application that helps users understand meals through image-based insights, nutritional breakdowns, and data-driven recommendations.",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "FastAPI",
+      "PostgreSQL",
+      "Redis",
+      "XGBoost",
+      "LightGBM",
+      "MLflow",
+      "scikit-learn",
+      "Docker",
+      "Tesseract OCR"
+    ],
+    github: "https://github.com/1415-da/BiteSense",
+    demo: "#",
+    blog: "#",
+    category: "Machine Learning"
+  },
+  {
     title: "Crop Price Prediction System",
     date: "April 2026",
     image: require("../assets/Price_Prediction.png"),
