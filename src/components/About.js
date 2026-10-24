@@ -4,10 +4,10 @@ const About = () => {
   return (
     <div className="space-y-8">
       {/* About Me Section */}
-      <div className="bg-[#222222] rounded-xl p-8 shadow-lg border border-[#333333] hover:border-[#FFD600] transition-colors duration-300">
+      <div className="bg-[#222222] rounded-xl p-4 md:p-8 shadow-lg border border-[#333333] hover:border-[#FFD600] transition-colors duration-300">
         <div className="flex items-center mb-6">
           <div className="w-1 h-8 bg-[#FFD600] rounded mr-4"></div>
-          <h2 className="text-2xl font-bold text-white">About Me</h2>
+          <h2 className="text-xl md:text-2xl font-bold text-white">About Me</h2>
         </div>
         
         <div className="space-y-4">
@@ -39,10 +39,10 @@ const About = () => {
       </div>
 
       {/* What I'm Doing Section */}
-      <div className="bg-[#222222] rounded-xl p-8 shadow-lg border border-[#333333] hover:border-[#FFD600] transition-colors duration-300">
+      <div className="bg-[#222222] rounded-xl p-4 md:p-8 shadow-lg border border-[#333333] hover:border-[#FFD600] transition-colors duration-300">
         <div className="flex items-center mb-6">
           <div className="w-1 h-8 bg-[#FFD600] rounded mr-4"></div>
-          <h2 className="text-2xl font-bold text-white">What I'm Doing</h2>
+          <h2 className="text-xl md:text-2xl font-bold text-white">What I'm Doing</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -121,10 +121,10 @@ const About = () => {
       </div>
 
       {/* How I Build Products Section */}
-      <div className="bg-[#222222] rounded-xl p-8 shadow-lg border border-[#333333] hover:border-[#FFD600] transition-colors duration-300">
+      <div className="bg-[#222222] rounded-xl p-4 md:p-8 shadow-lg border border-[#333333] hover:border-[#FFD600] transition-colors duration-300">
         <div className="flex items-center mb-6">
           <div className="w-1 h-8 bg-[#FFD600] rounded mr-4"></div>
-          <h2 className="text-2xl font-bold text-white">How I Build Products</h2>
+          <h2 className="text-xl md:text-2xl font-bold text-white">How I Build Products</h2>
         </div>
 
         <p className="text-[#B0B0B0] text-sm leading-relaxed mb-6">

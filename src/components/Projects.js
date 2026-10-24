@@ -18,7 +18,7 @@ const projects = [
       "XGBoost",
       "LightGBM",
       "MLflow",
-      "scikit-learn",
+      "Scikit-learn",
       "Docker",
       "Tesseract OCR"
     ],
@@ -29,7 +29,7 @@ const projects = [
   },
   {
     title: "Crop Price Prediction System",
-    date: "April 2026",
+    date: "Apr 2026",
     image: require("../assets/Price_Prediction.png"),
     description:
       "CropIntelli is a Flask-based machine learning web app that predicts crop prices using historical mandi trends, weather, and yield data. It supports manual and CSV batch predictions, compares multiple models (XGBoost, LightGBM, CatBoost, Random Forest, SVR, Ensemble), and includes interactive EDA with downloadable metrics/reports for analysis.",
@@ -41,8 +41,8 @@ const projects = [
   },
   {
     title: "Invoice Prediction System",
-    date: "March 2026",
-    image: require("../../src/assets/InvoicePredictionSystem.png"),
+    date: "Mar 2026",
+    image: require("../assets/InvoicePredictionSystem.png"),
     description:
       "Built an invoice prediction system using historical billing/payment data, including data cleaning, feature engineering, model training, and evaluation to estimate invoice outcomes.",
     technologies: ["Python", "Pandas", "NumPy", "Scikit-learn"],
@@ -53,11 +53,11 @@ const projects = [
   },
   {
     title: "Self-Healing Sentiment Analysis Pipeline",
-    date: "February 2026",
+    date: "Feb 2026",
     image: require("../assets/HealingPipeline.png"),
     description:
       "An Airflow DAG that runs sentiment analysis on Yelp-style reviews using a local Ollama LLM (LLaMA 3.2). It automatically detects and fixes bad or malformed text (missing, empty, wrong type, too long, etc.) before inference, then outputs sentiment labels, confidence scores, and a health report.",
-    technologies: ["Python (3.12+)", "Apache Airflow (3.0+)", "Ollama", "LLaMA 3.2"],
+    technologies: ["Python", "Apache Airflow", "Ollama", "LLaMA 3.2"],
     github: "https://github.com/1415-da/SelfHealing-DataPipeline",
     demo: "#",
     blog: "#",
@@ -65,11 +65,11 @@ const projects = [
   },
   {
     title: "DataSwift – Data Analytics Platform",
-    date: "August 2025",
+    date: "Aug 2025",
     image: require("../assets/DataSwift.png"),
     description:
-      "At Dataswift, our core goal is to make advanced analytics accessible to everyone without sacrificing power or flexibility. We’re building a dashboard where non-technical users can easily upload data, run automated cleaning, and generate rich, AI-powered insights through simple, guided steps and interactive visualizations—no coding required. At the same time, we offer deeper controls and custom scripting for advanced users, so anyone from a business analyst to a data scientist can work at their preferred depth. By combining intuitive workflows, one-click reporting, and progressive feature access.",
-    technologies: ["Next.js", "Python","MongoDB", "Tailwind CSS", "Pandas", "NumPy", "Scikit-learn"],
+      "DataSwift makes advanced analytics accessible without sacrificing power or flexibility. Non-technical users can upload data, run automated cleaning, and generate AI-powered insights through simple guided steps and interactive visualizations, with no coding required. Advanced users get deeper controls and custom scripting, so everyone from business analysts to data scientists can work at their preferred depth, with one-click reporting and progressive feature access.",
+    technologies: ["Next.js", "Python", "MongoDB", "Tailwind CSS", "Pandas", "NumPy", "Scikit-learn"],
     github: "https://github.com/1415-da/DataSwift",
     demo: "#",
     blog: "#",
@@ -77,7 +77,7 @@ const projects = [
   },
   {
     title: "Weather Data Analysis",
-    date: "July 2025",
+    date: "Jul 2025",
     image: require("../assets/weather.png"),
     description:
       "This Power BI Weather Data Analysis Dashboard is an interactive project where I extracted both current and forecasted weather data using a Weather API to visualize key metrics like temperature, humidity, rainfall, and wind speed. It was created as part of a task by Pianalytix Pvt. Ltd. to showcase my skills in real-time data integration, transformation, and visual storytelling. The dashboard features dynamic KPIs, trend charts, and filters for location and time, enabling users to explore meaningful insights and compare actual vs predicted weather patterns in a clean and intuitive interface.",
@@ -89,11 +89,11 @@ const projects = [
   },
   {
     title: "Sentiment Analysis",
-    date: "July 2025",
+    date: "Jul 2025",
     image: require("../assets/sentiment.png"),
     description:
       "A full-stack web application for analyzing the sentiment of stock market-related texts (news, tweets, etc.) using machine learning. The project features a visually appealing React frontend and a Flask backend with a trained sentiment analysis model.",
-    technologies: ["React.js", "Flask", "Scikit-learn","Jupyter Notebook"],
+    technologies: ["React", "Flask", "Scikit-learn", "Jupyter Notebook"],
     github: "https://github.com/1415-da/Sentiment_analysis",
     demo: "#",
     blog: "#",
@@ -101,11 +101,11 @@ const projects = [
   },
   {
     title: "Credit Scoring Web App",
-    date: "June 2025",
+    date: "Jun 2025",
     image: require("../assets/creditScore.png"),
     description:
-      "Built a professional banking application with Ml-powered credit scoring using React.js and Python Flask. The app features an interactive credit score gauge, analysis of 27 financial metrics, real-time risk assessment, and a sleek dark theme UI. Powered by machine learning, it showcases full-stack development, fintech-focused UX/UI design, and seamless integration of frontend animations with backend intelligence. Users receive dynamic risk insights based on financial behavior, enabling smarter lending decisions. This project demonstrates advanced skills in data visualization, and responsive fintech application design.",
-    technologies: ["Flask", "React.js", "Scikit-learn", "Pandas","NumPy","Joblib", "Jupyter Notebook"],
+      "Built a professional banking application with ML-powered credit scoring using React.js and Python Flask. The app features an interactive credit score gauge, analysis of 27 financial metrics, real-time risk assessment, and a sleek dark theme UI. Powered by machine learning, it showcases full-stack development, fintech-focused UX/UI design, and seamless integration of frontend animations with backend intelligence. Users receive dynamic risk insights based on financial behavior, enabling smarter lending decisions. This project demonstrates advanced skills in data visualization and responsive fintech application design.",
+    technologies: ["Flask", "React", "Scikit-learn", "Pandas", "NumPy", "Joblib", "Jupyter Notebook"],
     github: "https://github.com/1415-da/Credit_Scoring",
     demo: "https://credit-scoring-6ydz.vercel.app/",
     blog: "#",
@@ -117,7 +117,7 @@ const projects = [
     image: require("../assets/CelebrityInfo.png"),
     description:
       "This Streamlit application offers comprehensive celebrity information powered by Groq's LLaMA3 70B model through LangChain integration. Users can search for any celebrity and receive AI-generated insights including a detailed biography, date of birth, significant historical events around their birth, notable awards and recognitions, estimated net worth, and social media presence. The app features a clean and interactive UI with expandable sections for organized content display. It employs multi-step sequential prompting using LangChain chains.",
-    technologies: ["Python 3.8+", "Streamlit", "GROQ API Key","LangChain"],
+    technologies: ["Python", "Streamlit", "Groq API", "LangChain"],
     github: "https://github.com/1415-da/Celebrity_Search",
     demo: "https://celebritysearch-co4ehtucxzb7aucw2gz8x5.streamlit.app/",
     blog: "#",
@@ -128,7 +128,7 @@ const projects = [
     date: "May 2025",
     image: require("../assets/LinkedinPost.png"),
     description:
-      "This AI-powered application is designed to help users craft authentic and high-performing LinkedIn posts in seconds. Built using Llama 3.2, Streamlit, and insights drawn from top-performing LinkedIn content creators, the app offers a seamless experience for generating impactful posts. Users can select from trending topics, choose their preferred post length—short, medium, or long—and even write in English or Hinglish. Leveraging few-shot learning with carefully selected viral examples, the app ensures the generated content reflects the right tone, structure.",
+      "This AI-powered application is designed to help users craft authentic and high-performing LinkedIn posts in seconds. Built using Llama 3.2, Streamlit, and insights drawn from top-performing LinkedIn content creators, the app offers a seamless experience for generating impactful posts. Users can select from trending topics, choose their preferred post length—short, medium, or long—and even write in English or Hinglish. Leveraging few-shot learning with carefully selected viral examples, the app ensures the generated content reflects the right tone and structure.",
     technologies: ["Python", "Streamlit", "Llama 3.2"],
     github: "https://github.com/1415-da/Linkedin_Post_Generator",
     demo: "#",
@@ -197,7 +197,7 @@ const Projects = ({ hideDescriptionOnMobile = false }) => {
   return (
     <div className="space-y-8">
       {/* Category Filter Bar */}
-      <div className="bg-[#222222] rounded-xl p-6 shadow-lg border border-[#333333]">
+      <div className="bg-[#222222] rounded-xl p-4 md:p-6 shadow-lg border border-[#333333]">
         <div className="flex items-center mb-4">
           <div className="w-1 h-6 bg-[#FFD600] rounded mr-3"></div>
           <h3 className="text-lg font-semibold text-white">Filter by Category</h3>
@@ -208,10 +208,10 @@ const Projects = ({ hideDescriptionOnMobile = false }) => {
           <select
             value={selectedCategory}
             onChange={(e) => setSelectedCategory(e.target.value)}
-            className="w-full bg-[#333333] text-white border border-[#444444] rounded-lg px-4 py-3 focus:outline-none focus:border-[#FFD600] transition-colors duration-200"
+            className="w-full bg-[#181818] text-white border border-[#333333] rounded-lg px-4 py-3 focus:outline-none focus:border-[#FFD600] transition-colors duration-200"
           >
             {categories.map((category) => (
-              <option key={category} value={category} className="bg-[#333333] text-white">
+              <option key={category} value={category} className="bg-[#181818] text-white">
                 {category}
               </option>
             ))}
@@ -242,7 +242,7 @@ const Projects = ({ hideDescriptionOnMobile = false }) => {
       </div>
 
       {/* Projects Grid - Single column on mobile, multi-column on larger screens */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 group/3d-border">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredProjects.map((project) => (
           <ProjectCard 
             key={project.title} 
@@ -253,10 +253,10 @@ const Projects = ({ hideDescriptionOnMobile = false }) => {
       </div>
 
       {/* Project Stats */}
-      <div className="bg-[#222222] rounded-xl p-8 shadow-lg border border-[#333333] hover:border-[#FFD600] transition-colors duration-300">
+      <div className="bg-[#222222] rounded-xl p-4 md:p-8 shadow-lg border border-[#333333] hover:border-[#FFD600] transition-colors duration-300">
         <div className="flex items-center mb-6">
           <div className="w-1 h-8 bg-[#FFD600] rounded mr-4"></div>
-          <h2 className="text-2xl font-bold text-white">Project Statistics</h2>
+          <h2 className="text-xl md:text-2xl font-bold text-white">Project Statistics</h2>
         </div>
         
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">

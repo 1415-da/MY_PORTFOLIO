@@ -29,7 +29,7 @@ const Sidebar = ({ isMobile = false }) => {
             Kumar Gaurav
           </h1>
           <p className="text-[#B0B0B0] text-center text-sm">
-            Fitness-Focused Techie
+            Product-Minded Builder · Data & AI
           </p>
         </div>
 
@@ -75,7 +75,12 @@ const Sidebar = ({ isMobile = false }) => {
             </div>
             <div>
               <p className="text-[#B0B0B0] text-xs">Phone</p>
-              <p className="text-white text-sm">08766313590</p>
+              <a
+                href="tel:+918766313590"
+                className="text-white text-sm hover:text-[#FFD600] transition-colors duration-200"
+              >
+                +91 87663 13590
+              </a>
             </div>
           </div>
 
@@ -103,7 +108,7 @@ const Sidebar = ({ isMobile = false }) => {
             </div>
             <div>
               <p className="text-[#B0B0B0] text-xs">Location</p>
-              <p className="text-white text-sm">Bangalore, India</p>
+              <p className="text-white text-sm">Bengaluru, India</p>
             </div>
           </div>
         </div>
@@ -116,7 +121,7 @@ const Sidebar = ({ isMobile = false }) => {
               <div className="flex items-start">
                 <div className="w-2 h-2 bg-[#FFD600] rounded-full mt-2 mr-3 flex-shrink-0"></div>
                 <p className="text-white text-xs leading-relaxed">
-                  I can debug code after deadlifts – it's my version of
+                  I can debug code after deadlifts. It's my version of
                   meditation.
                 </p>
               </div>
@@ -150,7 +155,7 @@ const Sidebar = ({ isMobile = false }) => {
               <div className="flex items-start">
                 <div className="w-2 h-2 bg-[#FFD600] rounded-full mt-2 mr-3 flex-shrink-0"></div>
                 <p className="text-white text-xs leading-relaxed">
-                  Believes in the power of clean code and good music
+                  I believe in the power of clean code and good music.
                 </p>
               </div>
             </div>
@@ -159,11 +164,13 @@ const Sidebar = ({ isMobile = false }) => {
 
         {/* Social Links */}
         <div className={marginClass}>
-          <p className="text-[#B0B0B0] text-xs mb-3">Follow Me</p>
+          <p className="text-[#B0B0B0] text-xs mb-3">Connect</p>
           <div className="flex space-x-3">
             <a
               href="https://www.linkedin.com/in/kumar-gaurav-5bb64728a/"
               target="_blank"
+              aria-label="LinkedIn"
+              title="LinkedIn"
               rel="noopener noreferrer"
               className="w-10 h-10 bg-[#222222] rounded-lg flex items-center justify-center text-[#B0B0B0] hover:text-[#FFD600] hover:bg-[#333333] transition-all duration-200"
             >
@@ -174,6 +181,8 @@ const Sidebar = ({ isMobile = false }) => {
             <a
               href="https://github.com/1415-da"
               target="_blank"
+              aria-label="GitHub"
+              title="GitHub"
               rel="noopener noreferrer"
               className="w-10 h-10 bg-[#222222] rounded-lg flex items-center justify-center text-[#B0B0B0] hover:text-[#FFD600] hover:bg-[#333333] transition-all duration-200"
             >
@@ -184,6 +193,8 @@ const Sidebar = ({ isMobile = false }) => {
             <a
               href="https://x.com/kg15072004"
               target="_blank"
+              aria-label="X (Twitter)"
+              title="X (Twitter)"
               rel="noopener noreferrer"
               className="w-10 h-10 bg-[#222222] rounded-lg flex items-center justify-center text-[#B0B0B0] hover:text-[#FFD600] hover:bg-[#333333] transition-all duration-200"
             >
@@ -195,6 +206,8 @@ const Sidebar = ({ isMobile = false }) => {
             <a
               href="https://www.kaggle.com/kumargaurav1415"
               target="_blank"
+              aria-label="Kaggle"
+              title="Kaggle"
               rel="noopener noreferrer"
               className="w-10 h-10 bg-[#222222] rounded-lg flex items-center justify-center text-[#B0B0B0] hover:text-[#FFD600] hover:bg-[#333333] transition-all duration-200"
             >
@@ -211,6 +224,8 @@ const Sidebar = ({ isMobile = false }) => {
             <a
               href="https://leetcode.com/u/Gaurav1415/"
               target="_blank"
+              aria-label="LeetCode"
+              title="LeetCode"
               rel="noopener noreferrer"
               className="w-10 h-10 bg-[#222222] rounded-lg flex items-center justify-center text-[#B0B0B0] hover:text-[#FFD600] hover:bg-[#333333] transition-all duration-200"
             >

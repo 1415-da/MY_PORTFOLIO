@@ -24,35 +24,35 @@ const skills = [
   { name: "HTML", group: "Languages & Databases" },
   { name: "CSS", group: "Languages & Databases" },
   { name: "JavaScript", group: "Languages & Databases" },
-  { name: "Pandas", group: "Visualization Tools" },
-  { name: "NumPy", group: "Visualization Tools" },
-  { name: "Matplotlib", group: "Visualization Tools" },
-  { name: "Seaborn", group: "Visualization Tools" },
-  { name: "Tableau", group: "Visualization Tools" },
-  { name: "Power BI", group: "Visualization Tools" },
-  { name: "Excel", group: "Visualization Tools" },
+  { name: "Pandas", group: "Data Analysis & Visualization" },
+  { name: "NumPy", group: "Data Analysis & Visualization" },
+  { name: "Matplotlib", group: "Data Analysis & Visualization" },
+  { name: "Seaborn", group: "Data Analysis & Visualization" },
+  { name: "Tableau", group: "Data Analysis & Visualization" },
+  { name: "Power BI", group: "Data Analysis & Visualization" },
+  { name: "Excel", group: "Data Analysis & Visualization" },
   { name: "Transformers", group: "AI" },
   { name: "Hugging Face", group: "AI" },
   { name: "LangChain", group: "AI" },
   { name: "LangGraph", group: "AI" },
   { name: "NLTK", group: "AI" },
-  { name: "RAG System", group: "AI" },
+  { name: "RAG Systems", group: "AI" },
   { name: "Vector Databases", group: "AI" },
   { name: "Embeddings", group: "AI" },
   { name: "Computer Vision", group: "AI" },
   { name: "Fine-tuning", group: "AI" },
-  { name: "React.js", group: "Other Skills" },
-  { name: "Next.js", group: "Other Skills" },
-  { name: "Node.js", group: "Other Skills" },
-  { name: "Python Flask", group: "Other Skills" },
-  { name: "Machine Learning", group: "Other Skills" },
-  { name: "Scikit-learn", group: "Other Skills" },
-  { name: "TensorFlow", group: "Other Skills" },
-  { name: "PyTorch", group: "Other Skills" },
-  { name: "Git/GitHub", group: "Other Skills" },
-  { name: "Natural Language Processing", group: "Other Skills" },
-  { name: "Deep Learning", group: "Other Skills" },
-  { name: "Web Scrapping", group: "Other Skills" },
+  { name: "React.js", group: "Development & ML" },
+  { name: "Next.js", group: "Development & ML" },
+  { name: "Node.js", group: "Development & ML" },
+  { name: "Python Flask", group: "Development & ML" },
+  { name: "Machine Learning", group: "Development & ML" },
+  { name: "Scikit-learn", group: "Development & ML" },
+  { name: "TensorFlow", group: "Development & ML" },
+  { name: "PyTorch", group: "Development & ML" },
+  { name: "Git/GitHub", group: "Development & ML" },
+  { name: "Natural Language Processing", group: "Development & ML" },
+  { name: "Deep Learning", group: "Development & ML" },
+  { name: "Web Scraping", group: "Development & ML" },
   { name: "Scalability", group: "System Design" },
   { name: "API Design", group: "System Design" },
   { name: "Microservices", group: "System Design" },
@@ -93,7 +93,7 @@ const groupIcons = {
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
     </svg>
   ),
-  "Visualization Tools": (
+  "Data Analysis & Visualization": (
     <svg className="w-5 h-5 md:w-6 md:h-6 text-[#131313]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
     </svg>
@@ -103,7 +103,7 @@ const groupIcons = {
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
     </svg>
   ),
-  "Other Skills": (
+  "Development & ML": (
     <svg className="w-5 h-5 md:w-6 md:h-6 text-[#131313]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
     </svg>

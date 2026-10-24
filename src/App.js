@@ -45,7 +45,8 @@ function App() {
   }, []);
 
   useEffect(() => {
-    window.scrollTo({ top: 0 });
+    window.scrollTo({ top: 0, behavior: 'instant' });
+    setIsSidebarOpen(false);
   }, [activeSection]);
 
   const sections = ['about', 'resume', 'experience', 'projects', 'skills', 'contact'];
@@ -110,6 +111,8 @@ function App() {
       <div className="lg:hidden bg-[#222222] px-4 py-3 border-b border-[#333333]">
         <button
           onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+          aria-expanded={isSidebarOpen}
+          aria-label="Toggle profile"
           className="flex items-center justify-between w-full text-white"
         >
           <div className="flex items-center">
@@ -133,7 +136,7 @@ function App() {
 
       {/* Collapsible Sidebar - Mobile */}
       <div className={`lg:hidden bg-[#131313] border-b border-[#333333] transition-all duration-300 overflow-hidden ${
-        isSidebarOpen ? 'max-h-screen' : 'max-h-0'
+        isSidebarOpen ? 'max-h-[2000px]' : 'max-h-0'
       }`}>
         <Sidebar isMobile={true} />
       </div>
