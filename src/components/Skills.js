@@ -1,6 +1,30 @@
 import React from 'react';
 
 const skills = [
+  { name: "Product Lifecycle (0→1)", group: "Product Management" },
+  { name: "PRD Writing", group: "Product Management" },
+  { name: "Product Strategy", group: "Product Management" },
+  { name: "Roadmapping", group: "Product Management" },
+  { name: "Market Research", group: "Product Management" },
+  { name: "Competitive Analysis", group: "Product Management" },
+  { name: "User Research", group: "Product Management" },
+  { name: "User Personas & Journeys", group: "Product Management" },
+  { name: "Prioritization (RICE, Impact-Effort)", group: "Product Management" },
+  { name: "Product Metrics & KPIs", group: "Product Management" },
+  { name: "Funnel & Drop-off Analysis", group: "Product Management" },
+  { name: "User Acceptance Testing", group: "Product Management" },
+  { name: "Agile / Scrum", group: "Product Management" },
+  { name: "Go-to-Market", group: "Product Management" },
+  { name: "Localization", group: "Product Management" },
+  { name: "A/B Testing", group: "Product Management" },
+  { name: "Figma", group: "Product Tools" },
+  { name: "Jira", group: "Product Tools" },
+  { name: "Notion", group: "Product Tools" },
+  { name: "Miro", group: "Product Tools" },
+  { name: "Google Analytics", group: "Product Tools" },
+  { name: "Mixpanel", group: "Product Tools" },
+  { name: "SQL", group: "Product Tools" },
+  { name: "Google Sheets", group: "Product Tools" },
   { name: "Python", group: "Languages & Databases" },
   { name: "MySQL", group: "Languages & Databases" },
   { name: "C", group: "Languages & Databases" },
@@ -50,6 +74,9 @@ const skills = [
   { name: "Collaboration", group: "Soft Skills" },
   { name: "Adaptability", group: "Soft Skills" },
   { name: "Stakeholder Communication", group: "Soft Skills" },
+  { name: "Cross-functional Leadership", group: "Soft Skills" },
+  { name: "Ownership & Accountability", group: "Soft Skills" },
+  { name: "Customer Empathy", group: "Soft Skills" },
 ];
 
 const grouped = skills.reduce((acc, skill) => {
@@ -59,6 +86,16 @@ const grouped = skills.reduce((acc, skill) => {
 }, {});
 
 const groupIcons = {
+  "Product Management": (
+    <svg className="w-5 h-5 md:w-6 md:h-6 text-[#131313]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+    </svg>
+  ),
+  "Product Tools": (
+    <svg className="w-5 h-5 md:w-6 md:h-6 text-[#131313]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
+    </svg>
+  ),
   "Languages & Databases": (
     <svg className="w-5 h-5 md:w-6 md:h-6 text-[#131313]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />

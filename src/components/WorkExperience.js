@@ -22,6 +22,39 @@ const WorkExperience = () => {
           <div className="relative pl-12 md:pl-16 pb-6 md:pb-8">
             {/* Timeline Dot */}
             <div className="absolute left-1 md:left-3 top-2 w-3 h-3 md:w-4 md:h-4 bg-[#FFD600] rounded-full border-2 md:border-4 border-[#222222]"></div>
+
+            <div className="bg-[#181818] rounded-lg p-4 md:p-6 border border-[#333333] hover:border-[#FFD600]/30 transition-all duration-300 hover:shadow-lg group">
+              <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-3 gap-2 md:gap-0">
+                <h3 className="text-base md:text-lg font-bold text-[#f5f5f5] group-hover:text-[#FFD600] transition-colors duration-300">Operations Intern</h3>
+                <span className="text-[#FFD600] text-xs md:text-sm font-semibold bg-[#FFD600]/10 px-2 md:px-3 py-1 rounded-full self-start">Jun 2026 - Present</span>
+              </div>
+              <p className="text-[#f5f5f5] font-semibold text-sm mb-2">Airlearn (Unacademy) | Language Learning EdTech</p>
+              <p className="text-[#B0B0B0] text-sm mb-3">Bengaluru, Karnataka</p>
+              <ul className="space-y-2">
+                <li className="text-[#B0B0B0] text-sm leading-relaxed flex items-start">
+                  <span className="text-[#FFD600] mr-2">•</span>
+                  <span>Owned and authored end-to-end product localization PRDs for 3+ new language launches—defining voice personas, regional pronunciation standards, and content taxonomy with educators and engineers, accelerating launch readiness.</span>
+                </li>
+                <li className="text-[#B0B0B0] text-sm leading-relaxed flex items-start">
+                  <span className="text-[#FFD600] mr-2">•</span>
+                  <span>Spearheaded UAT across the Artimes Figma authoring plugin and multi-language app builds—surfacing critical edge-case bugs pre-release and cutting content deployment cycles by 35%, directly improving engineering release velocity.</span>
+                </li>
+                <li className="text-[#B0B0B0] text-sm leading-relaxed flex items-start">
+                  <span className="text-[#FFD600] mr-2">•</span>
+                  <span>Synthesized qualitative support tickets and quantitative learner drop-off metrics to surface UX friction points—converting findings into prioritized backlog tickets using impact-effort scoring to influence sprint planning.</span>
+                </li>
+              </ul>
+              <div className="flex flex-wrap gap-2 mt-4">
+                {["PRDs", "Localization", "UAT", "Figma", "User Research", "Backlog Prioritization", "Sprint Planning"].map((tag) => (
+                  <span key={tag} className="text-xs text-[#FFD600] bg-[#FFD600]/10 px-2 py-1 rounded-full">{tag}</span>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="relative pl-12 md:pl-16 pb-6 md:pb-8">
+            {/* Timeline Dot */}
+            <div className="absolute left-1 md:left-3 top-2 w-3 h-3 md:w-4 md:h-4 bg-[#FFD600] rounded-full border-2 md:border-4 border-[#222222]"></div>
             
             <div className="bg-[#181818] rounded-lg p-4 md:p-6 border border-[#333333] hover:border-[#FFD600]/30 transition-all duration-300 hover:shadow-lg group">
               <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-3 gap-2 md:gap-0">

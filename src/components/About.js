@@ -10,9 +10,32 @@ const About = () => {
           <h2 className="text-2xl font-bold text-white">About Me</h2>
         </div>
         
-        <p className="text-[#B0B0B0] leading-relaxed text-sm">
-        I’m a disciplined and detail-oriented Computer Science student who brings the same focus and consistency to coding as I do to lifting in the gym. With a passion for transforming complex challenges into clean, data-driven solutions, I thrive in collaborative environments and never shy away from pushing boundaries — whether it’s breaking a personal record or building something new in tech. A fast learner and self-starter, I continuously sharpen my skills through hands-on projects, self-directed learning, and a mindset built on growth, resilience, and routine. For me, writing clean code and staying fit aren’t separate — they’re part of the same drive to improve every single day.
-        </p>
+        <div className="space-y-4">
+          <p className="text-[#B0B0B0] leading-relaxed text-sm">
+          I’m a Computer Science student and product-minded builder who sits at the intersection of <span className="text-white font-semibold">product, data, and engineering</span>. I don’t just write code — I own products across their full lifecycle: researching the market, talking to users, writing PRDs, prioritizing the roadmap, working with engineers and designers to ship, and measuring what happens after launch.
+          </p>
+          <p className="text-[#B0B0B0] leading-relaxed text-sm">
+          At <span className="text-white font-semibold">Airlearn (Unacademy)</span>, I own localization PRDs for new language launches, run UAT across authoring tools and app builds, and turn support tickets and drop-off metrics into prioritized backlog items. Because I have a technical background in Data Science, AI, and Full Stack Development, I can go deep with engineers on feasibility and still keep the focus on user problems and business outcomes.
+          </p>
+          <p className="text-[#B0B0B0] leading-relaxed text-sm">
+          I bring the same discipline to product work as I do to lifting in the gym: show up consistently, measure progress, and keep improving. Whether it’s breaking a personal record or shipping a feature, I care about building things that move the needle.
+          </p>
+        </div>
+
+        {/* Impact Highlights */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-6">
+          {[
+            { value: "3+", label: "Language launches with PRDs I owned" },
+            { value: "35%", label: "Faster content deployment cycles" },
+            { value: "20+", label: "Client accounts supported via CRM & dashboards" },
+            { value: "30%", label: "Better forecasting accuracy from trade-data EDA" },
+          ].map((stat) => (
+            <div key={stat.label} className="bg-[#181818] rounded-lg p-4 border border-[#333333] text-center">
+              <p className="text-2xl font-bold text-[#FFD600]">{stat.value}</p>
+              <p className="text-[#B0B0B0] text-xs mt-1 leading-snug">{stat.label}</p>
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* What I'm Doing Section */}
@@ -23,6 +46,30 @@ const About = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="bg-[#181818] rounded-lg p-6 border border-[#333333]">
+            <div className="w-12 h-12 bg-[#FFD600] rounded-lg flex items-center justify-center mb-4">
+              <svg className="w-6 h-6 text-[#131313]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+              </svg>
+            </div>
+            <h3 className="text-lg font-bold text-white mb-2">Product Management</h3>
+            <p className="text-[#B0B0B0] text-sm">
+              Owning products from idea to launch: PRDs, roadmaps, prioritization, UAT, and cross-functional delivery with engineering, design, and content teams.
+            </p>
+          </div>
+
+          <div className="bg-[#181818] rounded-lg p-6 border border-[#333333]">
+            <div className="w-12 h-12 bg-[#FFD600] rounded-lg flex items-center justify-center mb-4">
+              <svg className="w-6 h-6 text-[#131313]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </div>
+            <h3 className="text-lg font-bold text-white mb-2">Market & User Research</h3>
+            <p className="text-[#B0B0B0] text-sm">
+              Competitive analysis, market sizing, user interviews, and funnel and drop-off analysis to find the problems worth solving.
+            </p>
+          </div>
+
           <div className="bg-[#181818] rounded-lg p-6 border border-[#333333]">
             <div className="w-12 h-12 bg-[#FFD600] rounded-lg flex items-center justify-center mb-4">
               <svg className="w-6 h-6 text-[#131313]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -70,6 +117,35 @@ const About = () => {
               Always exploring new technologies and methodologies to stay ahead in the field.
             </p>
           </div>
+        </div>
+      </div>
+
+      {/* How I Build Products Section */}
+      <div className="bg-[#222222] rounded-xl p-8 shadow-lg border border-[#333333] hover:border-[#FFD600] transition-colors duration-300">
+        <div className="flex items-center mb-6">
+          <div className="w-1 h-8 bg-[#FFD600] rounded mr-4"></div>
+          <h2 className="text-2xl font-bold text-white">How I Build Products</h2>
+        </div>
+
+        <p className="text-[#B0B0B0] text-sm leading-relaxed mb-6">
+          My approach covers the full product lifecycle, from the first market signal to post-launch iteration, so that every feature has a clear reason to exist and a way to measure whether it worked.
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {[
+            { step: "01", title: "Discover", desc: "Market research, competitor teardowns, user interviews, and support-ticket mining to find real user pain points." },
+            { step: "02", title: "Define", desc: "Problem statements, user personas, PRDs, and success metrics (KPIs) agreed with stakeholders before anything gets built." },
+            { step: "03", title: "Prioritize", desc: "Impact-effort scoring, RICE, and MoSCoW to turn a long wishlist into a focused roadmap and sprint backlog." },
+            { step: "04", title: "Build", desc: "Working closely with engineers and designers on wireframes, feasibility trade-offs, and agile sprints. I can also write the code myself." },
+            { step: "05", title: "Launch", desc: "UAT, edge-case testing, go-to-market readiness, and release coordination so we ship with confidence." },
+            { step: "06", title: "Measure & Iterate", desc: "Tracking adoption, retention, and drop-off metrics, then feeding the insights back into the next iteration." },
+          ].map((phase) => (
+            <div key={phase.step} className="bg-[#181818] rounded-lg p-5 border border-[#333333] hover:border-[#FFD600]/30 transition-colors duration-200">
+              <span className="text-[#FFD600] text-xs font-bold tracking-widest">{phase.step}</span>
+              <h3 className="text-lg font-bold text-white mt-1 mb-2">{phase.title}</h3>
+              <p className="text-[#B0B0B0] text-sm leading-relaxed">{phase.desc}</p>
+            </div>
+          ))}
         </div>
       </div>
     </div>
