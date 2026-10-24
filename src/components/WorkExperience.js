@@ -77,6 +77,11 @@ const WorkExperience = () => {
                   <span>Managed end-to-end operational workflows, coordinating with cross-functional teams and clients to translate business requirements into structured, analysis-ready datasets with 99% accuracy.</span>
                 </li>
               </ul>
+              <div className="flex flex-wrap gap-2 mt-4">
+                {["EDA", "Python", "Matplotlib", "Seaborn", "Excel CRM", "Dashboards", "Stakeholder Management"].map((tag) => (
+                  <span key={tag} className="text-xs text-[#FFD600] bg-[#FFD600]/10 px-2 py-1 rounded-full">{tag}</span>
+                ))}
+              </div>
             </div>
           </div>
         </div>
