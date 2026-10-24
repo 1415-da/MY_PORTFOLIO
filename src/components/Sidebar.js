@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState, useCallback } from "react";
+import ResumeModal from "./ResumeModal";
 
 const Sidebar = ({ isMobile = false }) => {
+  const [isResumeOpen, setIsResumeOpen] = useState(false);
+  const closeResume = useCallback(() => setIsResumeOpen(false), []);
   const containerClass = isMobile ? "w-full" : "w-80";
   const paddingClass = isMobile ? "p-4" : "p-8";
   const profileImageClass = isMobile ? "w-20 h-20" : "w-40 h-40";
@@ -225,11 +228,8 @@ const Sidebar = ({ isMobile = false }) => {
 
         {/* Resume Download */}
         <div>
-          <a
-            href="/Resume.pdf"
-            download
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={() => setIsResumeOpen(true)}
             className="w-full inline-flex items-center justify-center px-4 py-3 bg-[#FFD600] text-[#131313] text-sm font-semibold rounded-lg hover:bg-[#FFE033] transition-colors duration-200"
           >
             <svg
@@ -246,7 +246,8 @@ const Sidebar = ({ isMobile = false }) => {
               />
             </svg>
             Download Resume
-          </a>
+          </button>
+          <ResumeModal isOpen={isResumeOpen} onClose={closeResume} />
         </div>
       </div>
     </div>

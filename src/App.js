@@ -12,8 +12,41 @@ function App() {
   const [activeSection, setActiveSection] = useState('about');
   const [sliderStyle, setSliderStyle] = useState({});
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [stickyTops, setStickyTops] = useState(null);
   const desktopNavRef = useRef(null);
   const mobileNavRef = useRef(null);
+  const sidebarColRef = useRef(null);
+  const contentColRef = useRef(null);
+
+  // Desktop: both columns scroll with the page; whichever column ends first
+  // sticks to the bottom of the viewport while the longer one keeps scrolling.
+  useEffect(() => {
+    const updateStickyTops = () => {
+      if (window.innerWidth < 1024 || !sidebarColRef.current || !contentColRef.current) {
+        setStickyTops(null);
+        return;
+      }
+      const topFor = (el) => Math.min(0, window.innerHeight - el.offsetHeight);
+      setStickyTops({
+        sidebar: topFor(sidebarColRef.current),
+        content: topFor(contentColRef.current),
+      });
+    };
+
+    updateStickyTops();
+    const observer = new ResizeObserver(updateStickyTops);
+    observer.observe(sidebarColRef.current);
+    observer.observe(contentColRef.current);
+    window.addEventListener('resize', updateStickyTops);
+    return () => {
+      observer.disconnect();
+      window.removeEventListener('resize', updateStickyTops);
+    };
+  }, []);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, [activeSection]);
 
   const sections = ['about', 'resume', 'experience', 'projects', 'skills', 'contact'];
 
@@ -72,7 +105,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#181818] flex flex-col lg:flex-row">
+    <div className="min-h-screen bg-[#181818] flex flex-col lg:flex-row lg:items-start">
       {/* Mobile Sidebar Toggle Button */}
       <div className="lg:hidden bg-[#222222] px-4 py-3 border-b border-[#333333]">
         <button
@@ -106,12 +139,20 @@ function App() {
       </div>
 
       {/* Fixed Left Sidebar - Desktop */}
-      <div className="hidden lg:block">
+      <div
+        ref={sidebarColRef}
+        className="hidden lg:flex lg:min-h-screen"
+        style={stickyTops ? { position: 'sticky', top: stickyTops.sidebar } : undefined}
+      >
         <Sidebar isMobile={false} />
       </div>
-      
+
       {/* Main Content Area */}
-      <div className={`flex-1 flex flex-col transition-all duration-300 ${isSidebarOpen ? 'blur-sm lg:blur-none overflow-hidden' : ''}`}>
+      <div
+        ref={contentColRef}
+        className={`flex-1 min-w-0 flex flex-col lg:min-h-screen transition-[filter] duration-300 ${isSidebarOpen ? 'blur-sm lg:blur-none overflow-hidden' : ''}`}
+        style={stickyTops ? { position: 'sticky', top: stickyTops.content } : undefined}
+      >
         {/* Navigation Header - Desktop */}
         <header className="hidden lg:block bg-[#222222] px-8 py-6">
           <nav className="flex space-x-8 relative" ref={desktopNavRef}>
