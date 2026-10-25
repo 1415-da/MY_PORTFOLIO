@@ -25,7 +25,7 @@ const About = () => {
         {/* Impact Highlights */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-6">
           {[
-            { value: "3+", label: "Language launches with PRDs I owned" },
+            { value: "7+", label: "Language launches with PRDs I owned" },
             { value: "35%", label: "Faster content deployment cycles" },
             { value: "20+", label: "Client accounts supported via CRM & dashboards" },
             { value: "30%", label: "Better forecasting accuracy from trade-data EDA" },
