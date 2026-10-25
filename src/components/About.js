@@ -1,4 +1,5 @@
 import React from 'react';
+import ProductCycle from './ProductCycle';
 
 const About = () => {
   return (
@@ -128,25 +129,10 @@ const About = () => {
         </div>
 
         <p className="text-[#B0B0B0] text-sm leading-relaxed mb-6">
-          My approach covers the full product lifecycle, from the first market signal to post-launch iteration, so that every feature has a clear reason to exist and a way to measure whether it worked.
+          Building a product is a loop, not a straight line. Every launch feeds what I learn back into the next round of discovery.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          {[
-            { step: "01", title: "Discover", desc: "Market research, competitor teardowns, user interviews, and support-ticket mining to find real user pain points." },
-            { step: "02", title: "Define", desc: "Problem statements, user personas, PRDs, and success metrics (KPIs) agreed with stakeholders before anything gets built." },
-            { step: "03", title: "Prioritize", desc: "Impact-effort scoring, RICE, and MoSCoW to turn a long wishlist into a focused roadmap and sprint backlog." },
-            { step: "04", title: "Build", desc: "Working closely with engineers and designers on wireframes, feasibility trade-offs, and agile sprints. I can also write the code myself." },
-            { step: "05", title: "Launch", desc: "UAT, edge-case testing, go-to-market readiness, and release coordination so we ship with confidence." },
-            { step: "06", title: "Measure & Iterate", desc: "Tracking adoption, retention, and drop-off metrics, then feeding the insights back into the next iteration." },
-          ].map((phase) => (
-            <div key={phase.step} className="bg-[#181818] rounded-lg p-5 border border-[#333333] hover:border-[#FFD600]/30 transition-colors duration-200">
-              <span className="text-[#FFD600] text-xs font-bold tracking-widest">{phase.step}</span>
-              <h3 className="text-lg font-bold text-white mt-1 mb-2">{phase.title}</h3>
-              <p className="text-[#B0B0B0] text-sm leading-relaxed">{phase.desc}</p>
-            </div>
-          ))}
-        </div>
+        <ProductCycle />
       </div>
     </div>
   );
