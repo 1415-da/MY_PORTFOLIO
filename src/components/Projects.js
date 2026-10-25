@@ -3,6 +3,31 @@ import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
+    title: "Sales Forecasting",
+    date: "Oct 2026",
+    image: require("../assets/Sales_Forecasting.png"),
+    description:
+      "An end-to-end retail sales forecasting platform: Airflow trains and registers models, MLflow versions them, FastAPI serves them, and a Next.js web app gives business users 28-day store-level forecasts with uncertainty bands, a what-if Scenario Planner (promotions, holidays, closures, traffic), model monitoring with drift detection and retraining recommendations, and a model registry with promote and rollback. Trained on the M5 dataset, the XGBoost/LightGBM ensemble reaches a 7.5% 28-day WAPE against 12.9% for a naive baseline. The platform is secured with JWT authentication, role-based access control (5 roles, 18 capabilities), and a full audit trail.",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "FastAPI",
+      "PostgreSQL",
+      "XGBoost",
+      "LightGBM",
+      "Scikit-learn",
+      "MLflow",
+      "Apache Airflow",
+      "MinIO",
+      "Docker"
+    ],
+    github: "https://github.com/1415-da/Sales_Forecasting",
+    demo: "https://sales-forecasting-mu.vercel.app",
+    blog: "#",
+    category: "Machine Learning"
+  },
+  {
     title: "BiteSense",
     date: "May 2026",
     image: require("../assets/BiteSense.png"),
